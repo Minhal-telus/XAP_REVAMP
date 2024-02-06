@@ -1,0 +1,170 @@
+:root {
+  --telus-green: #4f7f1e;
+  --telus-black: #303233;
+  --telus-input-border: #707070;
+  --telus-formContainer-boxshadow: #00000029;
+  --telus-formContainer-border2: #b3b8bd;
+  --telus-checkbox-rememberme: #717171;
+  --telus-white: #ffffff;
+}
+
+@font-face {
+  font-family: TelusFont;
+  src: url("./assets/font/HelveticaNowDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: TelusFont;
+  src: url("./assets/font/HelveticaNowDisplay-Bold.ttf");
+  font-weight: bold;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+body {
+  background-image: url("./assets/Flower-bg.png");
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: left;
+  background-repeat: no-repeat;
+}
+* {
+  box-sizing: border-box;
+  font-family: TelusFont;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* LOGIN PAGE CSS  */
+
+.loginContainer {
+  border: 1px solid var(--telus-formContainer-border2);
+  box-shadow: 0px 3px 12px var(--telus-formContainer-boxshadow);
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: min(450px, 80%);
+  aspect-ratio: 450/630;
+
+  max-height: 80%;
+}
+
+.loginHeader {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  padding-top: 35px;
+}
+.header_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: var(--telus-black);
+  padding-top: 32px;
+  padding-bottom: 10px;
+}
+.header_text p {
+  margin: 0;
+}
+.loginFormContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginContainer form {
+  flex: 1;
+  display: flex;
+  width: 80%;
+
+  flex-direction: column;
+}
+.inputfield input {
+  height: 40px;
+  height: 40px;
+  border-color: #707070;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.loginContainer form .inputfield {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 3px;
+  padding-top: 15px;
+}
+
+.loginContainer form .checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 0;
+  color: var(--telus-checkbox-rememberme);
+}
+
+form button {
+  margin-top: 20px;
+  height: 52px;
+
+  border: none;
+  background-color: var(--telus-green);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.breakline {
+  border: 1px solid var(--telus-formContainer-border2);
+  width: 100%;
+  opacity: 37%;
+  margin: 15px 0;
+}
+.socialmedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social_text {
+  padding: 10px;
+  font-weight: bold;
+}
+.social_items {
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: var(--telus-input-border);
+}
+
+::selection {
+  background-color: var(--telus-green);
+  color: var(--telus-white);
+}
